@@ -1,0 +1,4 @@
+name: medai
+channels:
+  - defaults
+prefix: C:\Users\chenw\.conda\envs\medai
