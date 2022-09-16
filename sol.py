@@ -1,5 +1,3 @@
-
-
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -20,10 +18,10 @@ class Solution(object):
         all_list_val = []
         head = results = ListNode(0)
         for i in range(len(lists)):
-            while lists[i] is not None:
+            while lists[i] != None:
                 all_list_val.append(lists[i].val)
                 lists[i] = lists[i].next
-        
+
         for val in sorted(all_list_val):
             results.next = ListNode(val)
             results = results.next
